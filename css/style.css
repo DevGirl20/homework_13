@@ -1,0 +1,994 @@
+/*сделала чисто показ по гридам и скопировала изображение вместе с текстом 
+если не подойдет - пропишите, пожалуйста в комменте я переделаю))*/
+body{
+width: 1440px;
+height: 5565px;
+}
+h1{
+display: block;
+padding-top: 120px;
+font-family: 'Delius Unicase';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 45px;
+text-align: center;
+letter-spacing: 0.05em;
+color: #000000;
+}
+
+
+.wrapper_last, .wrapper_first, .wrapper_second{
+margin: 80px 135px 0px 135px;
+
+}
+.wrapper_first{
+display: grid;
+grid-template-columns: 370px 370px 370px;
+grid-template-rows: 370px 370px 370px;
+grid-gap: 30px;
+}
+.wrapper_second {
+display: grid;
+grid-template-columns: 370px 370px 370px;
+grid-template-rows: 370px 370px 370px 370px;
+grid-gap: 30px;
+}
+.wrapper_last {
+display: grid;
+grid-template-columns: 370px 370px 370px;
+grid-template-rows: 370px 370px 370px 370px 370px;
+grid-gap: 30px;
+}
+.wrapper_first__one, .wrapper_first__two, .wrapper_first__three,
+.wrapper_first__four, .wrapper_first__five, .wrapper_first__six{
+position: relative;
+}
+.wrapper_second__one, .wrapper_second__two, .wrapper_second__three,
+.wrapper_second__four, .wrapper_second__five, .wrapper_second__six{
+position: relative;
+}
+.wrapper_last__one, .wrapper_last__two, .wrapper_last__three,
+.wrapper_last__four, .wrapper_last__five, .wrapper_last__six, .wrapper_last__seven
+, .wrapper_last__eight, .wrapper_last__nine, .wrapper_last__ten{
+position: relative;
+}
+
+.wrapper_first_text_left{
+position: absolute;
+bottom: 20px;
+left: 20px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+color: white;
+}
+.wrapper_first_text_right{
+position: absolute;
+bottom: 20px;
+right: 20px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+color: white;
+}
+/*пробовала прописать для всех сразу блоков - не получилось*/
+.wrapper_first__one:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_first__one:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_first__one:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_first__one:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+.wrapper_first__two:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_first__two:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_first__two:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_first__two:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+.wrapper_first__three:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_first__three:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_first__three:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_first__three:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+.wrapper_first__four:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_first__four:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_first__four:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_first__four:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+.wrapper_first__five:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_first__five:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_first__five:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_first__five:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+.wrapper_first__six:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_first__six:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_first__six:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_first__six:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+
+.wrapper_second__one:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 15;
+visibility: hidden;
+}
+.wrapper_second__one:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 15;
+visibility: hidden;
+}
+.wrapper_second__one:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_second__one:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+.wrapper_second__two:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_second__two:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_second__two:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_second__two:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+.wrapper_second__three:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_second__three:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_second__three:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_second__three:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+.wrapper_second__four:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_second__four:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_second__four:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_second__four:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+.wrapper_second__five:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_second__five:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_second__five:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_second__five:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+.wrapper_second__six:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_second__six:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_second__six:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_second__six:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+
+
+.wrapper_last__one:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_last__one:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_last__one:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_last__one:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+.wrapper_last__two:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_last__two:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_last__two:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_last__two:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+.wrapper_last__three:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_last__three:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_last__three:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_last__three:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+.wrapper_last__four:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_last__four:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_last__four:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_last__four:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+.wrapper_last__five:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_last__five:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_last__five:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_last__five:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+.wrapper_last__six:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_last__six:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_last__six:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_last__six:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_last__seven:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_last__seven:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_last__seven:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_last__seven:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+.wrapper_last__eight:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_last__eight:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_last__eight:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_last__eight:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+.wrapper_last__nine:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_last__nine:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_last__nine:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_last__nine:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+.wrapper_last__ten:before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 70%;
+z-index: 10;
+visibility: hidden;
+}
+.wrapper_last__ten:after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 70%;
+z-index: 11;
+visibility: hidden;
+}
+.wrapper_last__ten:hover::after{
+content: url("../img/download.png");
+position: absolute;
+top: 20px;
+right: 20px;
+opacity: 100%;
+visibility: visible;
+}
+.wrapper_last__ten:hover::before{
+content: url("../img/heart.png");
+position: absolute;
+top: 20px;
+left: 20px;
+opacity: 100%;
+visibility: visible;
+}
+
+
+
+.wrapper_first__two{
+grid-column-start: 2;
+grid-column-end: 4;
+grid-row-start: 1;
+grid-row-end: 1;
+}
+.wrapper_first__three{
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 2;
+grid-row-end: 2;
+}
+.wrapper_first__four{
+
+}
+.wrapper_first__five{
+
+}
+.wrapper_first__six{
+grid-column-start: 2;
+grid-column-end: 4;
+grid-row-start: 3;
+grid-row-end: 3;
+}
+
+
+
+
+.wrapper_second__one {
+
+}
+.wrapper_second__two {
+
+grid-column-start: 2;
+grid-column-end: 4;
+grid-row-start: 1;
+grid-row-end: 1;
+}
+.wrapper_second__three {
+
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 2;
+grid-row-end: 4;
+}
+.wrapper_second__four {
+
+grid-column-start: 3;
+grid-column-end: 3;
+grid-row-start: 2;
+grid-row-end: 4;
+}
+.wrapper_second__five {
+
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 4;
+grid-row-end: 4;
+}
+.wrapper_second__six {
+
+}
+
+
+.wrapper_last__one {
+
+}
+.wrapper_last__two {
+
+grid-column-start: 2;
+grid-column-end: 2;
+grid-row-start: 1;
+grid-row-end: 3;
+}
+.wrapper_last__three {
+
+}
+.wrapper_last__four {
+
+}
+.wrapper_last__five {
+
+grid-column-start: 3;
+grid-column-end: 3;
+grid-row-start: 2;
+grid-row-end: 4;
+}
+.wrapper_last__six {
+
+grid-column-start: 1;
+grid-column-end: 1;
+grid-row-start: 3;
+grid-row-end: 5;
+}
+.wrapper_last__seven {
+
+}
+.wrapper_last__eight {
+
+grid-column-start: 2;
+grid-column-end: 4;
+grid-row-start: 4;
+grid-row-end: 4;
+}
+.wrapper_last__nine {
+
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 5;
+grid-row-end: 5;
+}
+.wrapper_last__ten {
+
+}
+
+.wrapper_first__all_img{
+/*background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);*/
+opacity: 80%;
+border-radius: 20px;
+}
+.wrapper_first__all_img:hover{
+opacity: 100%;
+}
+.wrapper_second__all_img{
+/*background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);*/
+opacity: 80%;
+border-radius: 20px;
+}
+.wrapper_second__all_img:hover{
+opacity: 100%;
+}
+
+.wrapper_last__all_img{
+/*background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);*/
+opacity: 80%;
+border-radius: 20px;
+}
+.wrapper_last__all_img:hover{
+opacity: 100%;
+}
+
